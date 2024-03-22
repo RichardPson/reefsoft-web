@@ -93,6 +93,8 @@ h4::first-letter {
 	margin-left: 50px;
 }
 /* Create a column layout for mobile and small screens */
+@media only screen and (max-width: 400px) {
+}
 @media only screen and (max-width: 600px) {
 	.wrapper {
 		grid-template-columns: 1fr;
@@ -118,5 +120,8 @@ h4::first-letter {
 	}
 	nav {
 		text-align: left;
+	}
+	#btn-menu {
+		margin-left: 2px;
 	}
 }
