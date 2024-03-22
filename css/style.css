@@ -69,7 +69,7 @@ h4::first-letter {
 	font-weight: 400;
 	user-select: none;
 }
-.navigation .btn-:hover {
+#btn-menu:hover {
 	background: #d3d3d3;
 	color: #30313d;
 }
@@ -82,7 +82,7 @@ h4::first-letter {
 	font-weight: 500;
 }
 
-.navigation .btn- {
+#btn-menu {
 	border: 1px solid #d3d3d3;
 	border-radius: 8px;
 	outline: 0;
@@ -96,7 +96,7 @@ h4::first-letter {
 @media only screen and (max-width: 550px) {
 	.wrapper {
 		grid-template-columns: 1fr;
-		grid-template-rows: 125px 1.5fr 80px;
+		grid-template-rows: 100px 1.5fr 80px;
 		grid-template-areas:
 			"header"
 			"main"
@@ -104,16 +104,19 @@ h4::first-letter {
 	}
 	main {
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1.5fr 1fr;
 		grid-template-areas:
 			"main"
 			"aside";
 	}
 	header {
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 100px 80px;
 		grid-template-areas:
 			"site-name"
 			"nav";
+	}
+	nav {
+		text-align: left;
 	}
 }
