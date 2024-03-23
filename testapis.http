@@ -1,0 +1,8 @@
+
+// https://api.krisinformation.se/v3/news
+// https://images-api.nasa.gov
+// https://api.krisinformation.se/v3/news?format=xml 
+// https://images-api.nasa.gov/search?q=jwts
+
+
+GET https://api.krisinformation.se/v3/news HTTP/1.1
