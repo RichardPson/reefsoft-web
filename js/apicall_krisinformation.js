@@ -1,8 +1,10 @@
 async function getfromKrisinformation() {
-	const request = new Request("https://api.krisinformation.se/v3/news");
+	const request = new Request(
+		"https://api.krisinformation.se/v3/notifications"
+	);
 	const response = await fetch(request);
 	const news = await response.json();
-	/* console.log(news[0].PushMessage); */
+	console.log(news);
 
 	return news;
 }

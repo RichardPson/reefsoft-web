@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200&display=swap");
+
+* {
+	font-family: "Albert Sans", sans-serif;
+	color: #fff;
+}
+body {
+	background: url("/res/pexels-photo-3426361.jpeg") no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(5px);
+	overflow: auto;
+}
+.wrapper {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100px 1.5fr 80px;
+	grid-template-areas:
+		"header header header header"
+		"main main main main"
+		"footer footer footer footer";
+}
+
+header {
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "site-name nav";
+
+	padding: 30px 30px;
+	background: #30313d;
+	z-index: 99;
+}
+nav {
+	grid-area: nav;
+	text-align: right;
+}
+main {
+	grid-area: main;
+
+	display: grid;
+	grid-template-columns: 1.5fr 200px;
+	grid-template-rows: 1fr;
+	grid-template-areas: "article aside";
+}
+article {
+	grid-area: article;
+}
+aside {
+	grid-area: aside;
+}
+footer {
+	grid-area: footer;
+	text-align: center;
+}
+h2,
+h3 {
+	font-size: 1.2em;
+}
+h4::first-letter {
+	color: dodgerblue;
+}
+.site-name {
+	grid-area: site-name;
+	font-size: 2em;
+
+	text-decoration: none;
+	font-weight: 400;
+	user-select: none;
+}
+#btn-menu:hover {
+	background: #d3d3d3;
+	color: #30313d;
+}
+
+.navigation a {
+	position: relative;
+	margin-left: 25px;
+	font-size: 1.2em;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+#btn-menu {
+	border: 1px solid #d3d3d3;
+	border-radius: 8px;
+	outline: 0;
+	width: 110px;
+	height: 45px;
+	background: transparent;
+	font-size: 1.2em;
+	margin-left: 50px;
+}
+/* Create a column layout for mobile and small screens */
+@media only screen and (max-width: 400px) {
+}
+@media only screen and (max-width: 600px) {
+	.wrapper {
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1.5fr 80px;
+		grid-template-areas:
+			"header"
+			"main"
+			"footer";
+	}
+	main {
+		grid-template-columns: 1fr;
+		grid-template-rows: 3fr 1fr;
+		grid-template-areas:
+			"main"
+			"aside";
+	}
+	header {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			"site-name"
+			"nav";
+	}
+	nav {
+		text-align: left;
+	}
+	#btn-menu {
+		margin-left: 2px;
+	}
+}

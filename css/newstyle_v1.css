@@ -25,6 +25,9 @@ header {
 	font-weight: 400;
 	user-select: none;
 }
+.navigation {
+}
+
 nav {
 	text-align: right;
 	font-size: 1.2em;
@@ -144,6 +147,7 @@ td {
 	aside {
 		width: 100%;
 	}
+
 	.navigation a {
 		position: relative;
 		margin-left: 5px;
