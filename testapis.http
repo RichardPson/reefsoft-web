@@ -3,6 +3,6 @@
 // https://images-api.nasa.gov
 // https://api.krisinformation.se/v3/news?format=xml 
 // https://images-api.nasa.gov/search?q=jwts
-
+// https://api.krisinformation.se/v3/notifications
 
 GET https://api.krisinformation.se/v3/news HTTP/1.1
