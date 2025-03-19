@@ -48,4 +48,6 @@ async function createApp() {
 
 	console.log(newsB.length);
 }
+
+async function setupTableHeadlines() {}
 export { createApp };
