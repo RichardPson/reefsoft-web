@@ -7,4 +7,4 @@
 
 //https://api.krisinformation.se/v3/testvmas HTTP/1.1
 
-GET https://api.krisinformation.se/v3/news
+GET https://api.krisinformation.se/v3/news?allCounties=true&days=60
